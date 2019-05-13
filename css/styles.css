@@ -1,9 +1,52 @@
 * {
-  border: 1px dashed white;
+  border: 1px dashed blue;
 }
 
-body {background-color: #705a6a;}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1024px;
+  margin: auto;
+}
+
+body {
+  background-color: #2E4053;
+}
 
 .grid-item img {
-    width: 300px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.bio-grid-item  {
+  background-color: #EAECEE;
+  position: static;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.grid-item  {
+  width: 307px;
+  height: auto;
+  position: static;
+  margin: 25px;
+
+}
+
+.bio-grid-item  {
+  width: 307px;
+  height: auto;
+  margin: 25px;
+  /* visibility: hidden; */
+}
+
+.bio-grid-item li {
+  font-weight: bold;
+}
+
+h3, h4  {
+  text-align: center;
 }
