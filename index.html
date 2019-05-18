@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Remember Us</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
   </head>
 
   <body>
     <div class="container-grid">
+
         <div class="grid-item">
           <div class="card">
             <div class="front">
@@ -15,34 +17,32 @@
             </div>
 
             <div class="back">
-              <h3>16th Street Baptist Church Bombing</h3>
+              <div class="button">
+                <p><a href="#16thst" rel="modal:open">16th Street Baptist Church Bombing</a></p>
+              </div>
               <ul>
                <li> Addie Mae Collins, 14
                <li> Denise McNair, 11
                <li> Carole Robertson, 14
                <li> Cynthia Wesley, 14
               </ul>
-            <div class="button">
-              <button type="button" onclick="alert('Bio')">Bio</button>
-            </div>
             </div>
           </div>
         </div>
 
-      <div class="grid-item column-1">
-        <div class="card">
-          <div class="front">
-            <img src="images/abner_louima.jpg" alt="Abner Louima">
-          </div>
-          <div class="back">
-            <h3>Abner Louima, Age 30</h3>
-            <h4>Incident August 9, 1997</h4>
-            <div class="button">
-              <button type="button" onclick="alert('Bio')">Bio</button>
+        <div class="grid-item column-1">
+          <div class="card">
+            <div class="front">
+              <img src="images/abner_louima.jpg" alt="Abner Louima">
+            </div>
+            <div class="back">
+              <div class="button">
+                <p><a href="#abner" rel="modal:open">Abner Louima, Age 30</a></p>
+              </div>
+              <h4>Incident August 9, 1997</h4>
             </div>
           </div>
         </div>
-      </div>
 
       <div class="grid-item column-1">
         <div class="front">
@@ -255,8 +255,19 @@
       </div>
     </div>
 
+    <div id="16thst" class="modal">
+      <p>Yeah!</p>
+      <a href="#16thst" rel="modal:close">Close</a>
+    </div>
+
+    <div id="abner" class="modal">
+      <p>Abner</p>
+      <a href="#abner" rel="modal:close">Close</a>
+    </div>
+
     <script src="js/jquery-3.4.0.min.js"></script>
     <script src="js/masonryv4.2.2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>
