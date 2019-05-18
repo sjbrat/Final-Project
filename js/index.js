@@ -1,6 +1,6 @@
 $(function () {
   $('.grid-item').click(function () {
-    console.log('item click')
+    // console.log('item click')
   })
   $('.container-grid').masonry({
     itemSelector: '.grid-item',
@@ -8,4 +8,11 @@ $(function () {
     // margin: 10,
     fitWidth: true
   })
+
+  $('.card').click(flip)
+
+  function flip () {
+    $('.card').removeClass('flipped')
+    $(this).toggleClass('flipped')
+  }
 })
