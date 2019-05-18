@@ -1,14 +1,11 @@
-$(function() {
-  $(".grid-item").click(function(){
+$(function () {
+  $('.grid-item').click(function () {
     console.log('item click')
   })
-  $(".container-grid").masonry({
+  $('.container-grid').masonry({
     itemSelector: '.grid-item',
-    columnWidth: 100
-  });
+    // columnWidth: 10,
+    // margin: 10,
+    fitWidth: true
+  })
 })
-  //   console.log( "ready!" );
-  //
-  //
-  // $( "#bio-grid-item" ).hide();
-  //   console.log('hide me')
